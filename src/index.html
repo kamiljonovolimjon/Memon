@@ -1,48 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menom</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body class="bg-black bg-[url(/src/images/body/background.svg)] bg-no-repeat bg-cover object-cover bg-top">
-
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="bg-black bg-[url(/src/images/body/background.svg)] bg-no-repeat bg-cover object-cover"
+  >
     <header class="header pt-9">
-        <div class="container  mw-[1208px] mw-[100%] px-5 flex justify-between mx-[auto]">
-            <div class="header__left">
-                <a href="/src">
-                    <img class="transition hover:opacity-70 active:opacity-40" src="./images/header/site-logo.svg" width="131" height="40" alt="Site Logo">
-                </a>
-            </div>
-            <div class="header__right flex gap-5 items-center">
-                <button class="header__btn font-medium text-xs leading-[100%] py-2 px-4 rounded-lg transition hover:opacity-70 active:opacity-40 text-[#E1E1E1] items-center border border-[#9A9A9A]">About me</button>
-                <button class="header__btn font-medium text-xs leading-[100%] py-2 px-4 rounded-lg transition hover:opacity-70 active:opacity-40 text-[#000000] bg-white items-center border border-[#9A9A9A]">Contact</button>
-            </div>
+      <div
+        class="container mw-[1208px] mw-[100%] px-5 flex justify-between mx-[auto]"
+      >
+        <div class="header__left">
+          <a href="/src">
+            <img
+              class="transition hover:opacity-70 active:opacity-40"
+              src="./images/header/site-logo.svg"
+              width="131"
+              height="40"
+              alt="Site Logo"
+            />
+          </a>
         </div>
+        <div class="header__right flex gap-5 items-center hidden sm:block">
+          <button
+            class="header__btn font-medium text-xs leading-[100%] py-2 px-4 rounded-lg transition hover:opacity-70 active:opacity-40 text-[#E1E1E1] items-center border border-[#9A9A9A]"
+          >
+            About me
+          </button>
+          <button
+            class="header__btn font-medium text-xs leading-[100%] py-2 px-4 rounded-lg transition hover:opacity-70 active:opacity-40 text-[#000000] bg-white items-center border border-[#9A9A9A]"
+          >
+            Contact
+          </button>
+
+        </div>
+        
+        <button class="bg-transparent rounded-none items-center sm:hidden"><img src="./images/header/burger-menu.svg" width="32" height="32" alt="Menu"></button>
+
+      </div>
     </header>
 
     <main>
+      <section class="hero pt-14 pb-6 sm:pt-28 sm:pb-12">
+        <div class="container max-w-[630px] ml-auto mr-auto px-5">
+          <div class="max-w-[231px] w-[100%] ml-auto mr-auto rounded-[50%] mb-4.5 sm:mb-9">
+            <img
+              class="max-w-[150px] w-[100%] ml-auto mr-auto sm:max-w-[231px]"
+              src="./images/hero/hero-img.png"
+              width="231"
+              height="231"
+              alt="Hero Image"
+            />
+          </div>
 
-        <section class="hero pt-28 pb-12">
-            <div class="container max-w-[630px] ml-auto mr-auto px-5">
-                <div class=" max-w-[231px] w-[100%] ml-auto mr-auto rounded-[50%] mb-9">
-                    <img class="w-[100%]" src="./images/hero/hero-img.png" width="231 " height="231" alt="Hero Image">
-                </div>
+          <div class="max-w-[590px] w-[100%] text-center">
+            <h1
+              class="hero__title text-4xl font-bold text-white leading-[100%] sm:text-6xl"
+            >
+              Ibrahim Memon!
+            </h1>
+            <span
+              class="hero__subtitle max-w-[250] leading-[100%] text-base font-semibold items-center text-center text-[#878787] sm:text-2xl"
+              >I do Code &
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[#9C83FF] to-[#FF9051]"
+                >Chill</span
+              >
+              🍿</span
+            >
+            <p
+              class="hero__descr max-w-[590px] w-[100%] mt-2.5 mb-4 font-medium text-xs text-[#E1E1E1]  sm:mt-5 sm:mb-9 sm:text-base"
+            >
+              Passionate Software Engineer with a focus on React Native
+              development, dedicated to crafting elegant and user-friendly
+              mobile applications.
+            </p>
+          </div>
 
-                <div class="max-w-[590px] w-[100%] text-center">
-                    <h1 class="hero__title  text-6xl font-bold text-white leading-[100%]">Ibrahim Memon!</h1>
-                    <span class="hero__subtitle max-w-[250] leading-[100%] text-2xl font-semibold items-center text-center text-[#878787]">I do Code & Chill 🍿</span>
-                    <p class="hero__descr max-w-[590px] w-[100%] mt-5 mb-9 font-medium text-base text-[#E1E1E1]">Passionate Software Engineer with a focus on React Native development,
-dedicated to crafting elegant and user-friendly mobile applications.</p>
-                </div>
+          <div class="max-w-[630px] w-[100%] text-center">
+            <button
+              class="py-2 px-6 text-white font-medium border rounded-[75px] transition hover:bg-amber-50 hover:text-black hover:opacity-70 active:bg-transparent active:text-white active:opacity-40 sm:py-4 sm:px-12"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="about-me py-6 sm:py-12">
+        <div
+          class="conatiner max-w-[700px] w-[100%] px-[20px] ml-auto mr-auto text-center items-center"
+        >
+          <h1
+            class="about-me__title font-extrabold text-3xl text-white leading-[100%] uppercase sm:text-[45px]"
+          >
+            About Me
+          </h1>
+          <span
+            class="about-me__subtitle text-[11px] font-medium text-transparent tracking-[60%] bg-clip-text bg-gradient-to-r from-[#9C83FF] to-[#FF9051] sm:text-xs"
+            >Explore Now</span
+          >
+          <p
+            class="about-me__descr mt-3.5 text-center text-xs font-medium leading-[100%] text-[#E1E1E1] sm:mt-7 sm:text-lg"
+          >
+            As a passionate software engineer, I thrive on the intricate dance
+            between logic and creativity. Currently immersed in the dynamic
+            world of <span class="font-bold">WebHR</span>, my expertise centers
+            around React Native, where I seamlessly blend technology with
+            innovation. <br /><br />
+            With a fervor for crafting elegant solutions, I navigate the
+            ever-evolving andscape of software development. My journey involves
+            translating concepts into code, creating seamless user experiences,
+            and constantly pushing the boundaries of what's possible
+          </p>
+        </div>
+      </section>
+      
+      <section class="experience py-6 sm:py-12">
+        <div class="container px-[20px] max-w-[700px] w-[100%] ml-auto mr-auto">
+          <div class="experience__head text-center mb-7 sm:mb-14">
+            <h2
+              class="experience__title font-extrabold text-3xl text-white leading-[100%] uppercase sm:text-[45px]"
+            >
+              Experience
+            </h2>
+            <span
+              class="experience__subtitle text-[11px] sm:text-xs font-medium text-transparent tracking-[60%] bg-clip-text bg-gradient-to-r from-[#9C83FF] to-[#FF9051]"
+              >Explore Now</span
+            >
+          </div>
 
-                <div class="max-w-[630px] w-[100%] text-center">
-                    <button class="py-4 px-12 text-white font-medium border rounded-[75px] transition hover:bg-amber-50 hover:text-black hover:opacity-70 active:bg-transparent active:text-white active:opacity-40">Contact Me</button>
-                </div>
+          <div class="text-white">
+            <div class="flex justify-between items-center mb-4 sm:mb-8">
+              <h3 class="font-normal text-base sm:text-lg leading-[100%]">
+                <span class="font-extrabold">WebHR /</span> Software Engineer
+              </h3>
+              <span class="font-normal items-center text-[8px] sm:text-xs leading-[100%] text-[#E1E1E1]"
+                >MAY 2022 - PRESENT, HYDERABAD</span
+              >
             </div>
-        </section>
+
+            <div class="mb-4">
+              <p class="font-medium text-[8px] sm:text-xs leading-[100%] text-[#E1E1E1]">
+                Currently, I am working on WebHR Mobile Application, WebHR is a
+                Cloud based Social HR Software for SMEs by Verge Systems Inc.
+                WebHR is currently used in over 160 countries world wide by
+                thousands of organizations to manage HR, As a React.js developer
+                with 1.5 year of experience, I have a strong foundation in
+                creating dynamic and responsive mobile and web applications.
+                <br /><br />My experience with React Native has allowed me to
+                develop cross-platform mobile applications that run seamlessly
+                on both iOS and Android platforms. Additionally, my proficiency
+                in React.js has equipped me with the skills to create fast,
+                scalable, and dynamic web pages with excellent user experiences.
+                I have a deep understanding of component-based architecture and
+                state management, and I am well-versed in the latest web
+                development trends and technologies.
+              </p>
+            </div>
+
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn">React Native</button>
+
+              <button class="btn">React</button>
+
+              <button class="btn">JavaScript</button>
+
+              <button class="btn">Typescript</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects pt-6 pb-14 sm:pt-12 sm:pb-28">
+        <div class="container px-[20px] max-w-[700px] w-[100%] ml-auto mr-auto">
+          <div class="projects__top text-center mb-7 sm:mb-14">
+            <h2
+              class="experience__title font-extrabold text-3xl sm:text-[45px] text-white leading-[100%] uppercase"
+            >
+              Projects
+            </h2>
+            <span
+              class="experience__subtitle text-[11px] sm:text-xs font-medium text-transparent tracking-[60%] bg-clip-text bg-gradient-to-r from-[#9C83FF] to-[#FF9051]"
+              >Explore Now</span
+            >
+          </div>
+
+          <div class="projects__bottom grid sm:grid-cols-2 gap-6">
+            <a href="#" class="max-w-83.25 w-[100%] ml-auto mr-auto hover:opacity-70 active:opacity-40 transition text-white flex gap-3.5 items-center">
+                
+              <img class="max-w-31.5 [w-100%]"
+                src="./images/projects/webhr.png"
+                width="126"
+                height="70"
+                alt="WebHR"
+              />
+              <div class="max-w-47.5 w-[100%]">
+                <h3 class="font-extrabold text-[16px] leading-[100%] tracking-[-3%] mb-[3px]">WebHR</h3>
+                <p class="font-medium text-[6px] text-[#878787] leading-[100%] tracking-[-3%]">
+                  Designed a modern UI website comprising more than 50 screens,
+                  along with the integration of a blog using Next.js.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" class="max-w-83.25 w-[100%] ml-auto mr-auto hover:opacity-70 active:opacity-40 transition text-white flex gap-3.5 items-center">
+              <img class="max-w-31.5 w-[100%] bg-white pt-[27px] pb-[27.46px] pl-[25px] pr-[26px] rounded-[7.55px]"
+                src="./images/projects/hireside.png"
+                width="126"
+                height="70"
+                alt="WebHR"
+              />
+              <div class="max-w-47.5 w-[100%]">
+                <h3 class="font-extrabold text-[16px] leading-[100%] tracking-[-3%] mb-[3px]">HireSide</h3>
+                <p class="font-medium text-[6px] text-[#878787] leading-[100%] tracking-[-3%]">
+                  Developed a web application on Next.js that allows users to apply for jobs, create job posts, and manage their company profiles. 
+                </p>
+              </div>
+            </a>
+
+            <a href="#" class="max-w-83.25 w-[100%] ml-auto mr-auto hover:opacity-70 active:opacity-40 transition text-white flex gap-3.5 items-center">
+              <img class="max-w-31.5 w-[100%] rounded-[7.55px] bg-white px-[23px] pt-[27px] pb-[27.93px]"
+                src="./images/projects/vergesystem.png"
+                width="126"
+                height="70"
+                alt="WebHR"
+              />
+              <div class="max-w-47.5 w-[100%]">
+                <h3 class="font-extrabold text-[16px] leading-[100%] tracking-[-3%] mb-[3px]">Verge Systems</h3>
+                <p class="font-medium text-[6px] text-[#878787] leading-[100%] tracking-[-3%]">
+                  Developed the Verge Systems website using React.js.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" class="max-w-83.25 w-[100%] ml-auto mr-auto hover:opacity-70 active:opacity-40 transition text-white flex gap-3.5 items-center">
+              <img class="max-w-31.5 w-[100%] bg-white pt-[16px] pr-[47.26px] pb-[16.93px] pl-[47px] rounded-[7.55px]"
+                src="./images/projects/payoasis.png"
+                width="126"
+                height="70"
+                alt="WebHR"
+              />
+              <div class="max-w-47.5 w-[100%]">
+                <h3 class="font-extrabold text-[16px] leading-[100%] tracking-[-3%] mb-[3px]">Payoasis</h3>
+                <p class="font-medium text-[6px] text-[#878787] leading-[100%] tracking-[-3%]">
+                  Designed the modern UI for a banking website utilizing Gatsby.
+                </p>
+              </div>
+
+            </a>
+            
+          </div>
+        </div>
+      </section> 
+
+<!-- <section class="bg-[#F7F8F8] py-5 px-5">
+    <div class="container mx-w-[1352px] ml-auto mr-auto px-5">
         
-    </main>#878787
-</body>
+        <div class="item rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+        <div class="item rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+        <div class="item-2 rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+        <div class="item-2 rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+        <div class="item-2 rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+        <div class="item rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+        <div class="item rounded-[40px] bg-white max-w-[646px] w-[100%] p-10">
+            <div class="card__head mx-w-[566px]  flex items-center gap-2.5 mb-3.5">
+                <img src="./images/projects/GRID.png" width="44" height="44" alt="icon">
+                <h2 class="font-semibold leading-[139%] text-[#2C2B35] text-2xl">Управление запасами</h2>
+            </div>
+            
+            <p class="mx-w-[566px]] font-normal text-[16px] mb-8">Сервис 1С-Товары позволяет рассчитать необходимое количество товаров на полках (уровень запасов), помогает организовать систему контроля за остатками товаров, а также вовремя и в нужном количестве закупать у поставщиков.</p>
+            
+            <button>Подробнее</button>
+            
+        </div>
+        
+    </div>
+    
+</section> -->
+    </main>
+
+    <footer class="footer pt-14 pb-10 sm:pt-28 sm:pb-23.5">
+        <div class="container max-w-125 w-[100%] ml-auto mr-auto px-5">
+            <div class="max-w-[174.5px] w-[100%] footer__socials mb-3.5 sm:mb-7 flex flex-wrap justify-between ml-auto mr-auto">
+                <a class="transition hover:opacity-70 active:opacity-40" href="#"><img src="./images/footer/github-icon.svg" alt="GitHub"></a>
+                <a class="transition hover:opacity-70 active:opacity-40" href="#"><img src="./images/footer/instagram-icon.svg" alt="Instagram"></a>
+                <a class="transition hover:opacity-70 active:opacity-40" href="#"><img src="./images/footer/linked-icon.svg" alt="Linked"></a>
+                <a class="transition hover:opacity-70 active:opacity-40" href="#"><img src="./images/footer/x-icon.svg" alt="X"></a>
+            </div>
+
+            <div class="">
+                <p class="text-[#E1E1E1] font-medium text-[8px] sm:text-[10px] leading-[100%] text-center items-center">Loosely designed in <img class="inline-block" src="./images/footer/figma-icon.png" width="7.33" height="11" alt="Figma"> Figma and coded in Visual Studio Code by yours truly. Built with Next.js
+and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface.</p>
+            </div>
+        </div>
+    </footer>
+
+  </body>
 </html>
+
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->

@@ -1,1 +1,75 @@
 @import "tailwindcss";
+
+.btn {
+    font-weight: 400;
+    font-size: 5px;
+    line-height: 100%;
+    text-align: center;
+    color: #E1E1E1;
+    
+    padding: 3px 10px;
+    border: 1px solid transparent;
+    border-radius: 55px;
+    background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(95.28deg, #9C83FF 57.09%, #FF9051 87.74%) border-box;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #111;
+    opacity: 0.7;
+}
+
+.btn:active {
+    opacity: .4;
+}
+
+@media (min-width:640px) {
+    .btn {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+}
+
+
+/* 
+
+class="bg-black bg-[url(/src/images/body/background.svg)] bg-no-repeat bg-cover object-cover bg-top"
+
+*/
+
+
+/* .container {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+
+gap: 20px;
+}
+
+.item {
+grid-column: span 3;
+}
+
+.item-2 {
+grid-column: span 2;
+}
+
+
+@media (max-width:1024px) {
+.item-2 {
+grid-column: span 3;
+}    
+}
+
+
+@media (max-width:650px) {
+.item-2 {
+grid-column: span 6;
+}
+
+.item {
+grid-column: span 6;
+}    
+} */
